@@ -1,5 +1,6 @@
 import React, { ReactNode, ReactElement } from 'react';
 
+import Logo from '../components/logo';
 import Menu from '../components/menu';
 
 type Props = {
@@ -10,9 +11,11 @@ type Props = {
 
 const Layout = ({ children, pathname }: Props): ReactElement => {
   return (
-    <div>
-      <Menu pathname={pathname} />
-
+    <div className="px-28 py-8">
+      <div className="flex space-x-8 items-center border-b py-8">
+        <Logo />
+        <Menu pathname={pathname} />
+      </div>
       {children}
     </div>
   );
