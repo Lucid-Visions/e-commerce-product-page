@@ -12,7 +12,7 @@ export interface Props {
 
 const MenuItem = ({ text, icon, navigateTo, onClick }: Props): ReactElement => {
   return (
-    <div className="py-2 text-sm">
+    <div className="py-2 text-sm text-gray-400">
       <Link href={navigateTo}>
         <button onClick={onClick}>
           <span>{icon}</span>

@@ -8,8 +8,28 @@ export interface Props {
 const Menu = ({ pathname }: Props): ReactElement => {
   const navItems: NavigationItem[] = [
     {
-      key: 'home',
-      text: 'Home',
+      key: 'collection',
+      text: 'Collections',
+      navigateTo: '/',
+    },
+    {
+      key: 'men',
+      text: 'Men',
+      navigateTo: '/',
+    },
+    {
+      key: 'women',
+      text: 'Women',
+      navigateTo: '/',
+    },
+    {
+      key: 'about',
+      text: 'About',
+      navigateTo: '/',
+    },
+    {
+      key: 'contact',
+      text: 'Contact',
       navigateTo: '/',
     },
   ];
