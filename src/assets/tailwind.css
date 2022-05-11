@@ -1,3 +1,29 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import '~react-image-gallery/styles/css/image-gallery.css';
+
+/* react-image-gallery overrides */
+.image-gallery-thumbnails-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-gallery-thumbnails {
+  margin-top: 2rem;
+}
+
+.image-gallery-image {
+  border-radius: 0.75rem;
+}
+
+.image-gallery-thumbnail.active {
+  border-color: hsl(26, 100%, 55%);
+}
+
+.image-gallery-thumbnail-image {
+  border-radius: 0.75rem;
+}
+.image-gallery-thumbnail:hover {
+  border-color: hsl(26, 100%, 55%);
+}

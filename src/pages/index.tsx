@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 const IndexPage = (): ReactElement => {
   const router = useRouter();
 
-  return <Layout title="Home | Next.js + TypeScript Example" pathname={router.pathname}></Layout>;
+  return <Layout title="Sneakers" pathname={router.pathname}></Layout>;
 };
 
 export default IndexPage;
